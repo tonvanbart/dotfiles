@@ -1,0 +1,36 @@
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+	br = branch
+    adog = log --all --decorate --oneline --graph
+    
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[user]
+	name = Ton van Bart
+	email = ton.vanbart@kpn.com
+[core]
+	autocrlf = input
+	excludesfile = /Users/ton/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
