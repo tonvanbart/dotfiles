@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/ton/stash/DSL/docker-zookeeper'
+let g:netrw_dirhist_2='/Users/ton/stash/DSL/docker-zookeeper/files'
+let g:netrw_dirhist_3='/Users/ton/stash/DSL/docker-zookeeper'
+let g:netrw_dirhist_4='/Users/ton/stash/DSL/docker-ssl'
+let g:netrw_dirhist_5='/Users/ton/stash/DSL/docker-ssl/certs'

@@ -1,0 +1,15 @@
+
+{
+  "mode":"flat",
+  "segments": [
+    "virtual_env",
+    "ssh",
+    "cwd",
+    "/Users/ton/stash/tapia500/powerline-k8/k8_prompt.py",
+    "git",
+    "hg",
+    "jobs",
+    "root"
+  ],
+  "cwd":{ "mode" : "plain" }
+}
