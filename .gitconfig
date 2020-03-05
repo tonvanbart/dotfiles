@@ -3,7 +3,8 @@
 	st = status
 	ci = commit
 	br = branch
-    adog = log --all --decorate --oneline --graph
+        adog = log --all --decorate --oneline --graph
+	sub = submodule
     
 [color]
 	branch = auto
