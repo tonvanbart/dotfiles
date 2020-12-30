@@ -29,3 +29,14 @@ To github.com:tonvanbart/dotfiles.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 After this, start adding dotfiles with `dotfiles add ...`, `dotfiles commit` and `dotfiles push`
+
+## set up a new machine
+```
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/anandpiyer/.dotfiles.git ~
+```
+This might fail if git finds an existing config file in your $HOME. In that case, a simple solution is to clone to a temporary directory, and then delete it once you are done:
+```
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/anandpiyer/.dotfiles.git tmpdotfiles
+rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
+rm -r tmpdotfiles
+```
